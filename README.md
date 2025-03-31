@@ -12,6 +12,7 @@ It should create snapshots of the state of the system each 30 seconds (configura
     "KiB Swap": {"total": 16280636, "free": 335140, "used": 11621308},
     "Timestamp": 1624400255}
 
+
 Output should be written to the console and  json file.
 
 The script has to accept an interval (default value = 30 seconds) and output file name. Use argparse module, see: https://docs.python.org/3/library/argparse.html
