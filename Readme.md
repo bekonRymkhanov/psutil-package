@@ -7,7 +7,7 @@ A Python-based system monitoring tool that captures CPU, memory, swap usage, and
 Clone the repository and install the package:
 ```bash
 git clone https://github.com/bekonRymkhanov/psutil-package.git snapshot-util
-cd snapshot-util
+cd snapshot-util // or folder where setup.py is located
 pip install -U .
 ```
 
