@@ -6,7 +6,7 @@ class SnapshotCollector:
 
     def collect(self):
         """Collects system stats."""
-        cpu_times = psutil.cpu_times()
+        cpu_times = psutil.cpu_times_percent(interval=1)
         mem = psutil.virtual_memory()
         swap = psutil.swap_memory()
 
