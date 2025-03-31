@@ -13,8 +13,8 @@ class SnapshotCollector:
         return {
             "Tasks": self.get_task_summary(),
             "%CPU": {"user": cpu_times.user, "system": cpu_times.system, "idle": cpu_times.idle},
-            "KiB Mem": {"total": mem.total, "free": mem.free, "used": mem.used},
-            "KiB Swap": {"total": swap.total, "free": swap.free, "used": swap.used},
+            "KiB Mem": {"total": mem.total//100, "free": mem.free//100, "used": mem.used//100},
+            "KiB Swap": {"total": swap.total//100, "free": swap.free//100, "used": swap.used//100},
             "Timestamp": int(time.time())
         }
 
